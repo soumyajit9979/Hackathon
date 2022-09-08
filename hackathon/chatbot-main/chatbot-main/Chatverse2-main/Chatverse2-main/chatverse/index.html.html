@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COLLEGE-VERSE</title>
+    <link rel="stylesheet" href="frontt.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="2.png" alt="Not Found">
+                
+
+            </div>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#  ">HOME</a></li>
+                    <li><a onclick="myFunc2()">LOGIN</a></li>
+                    <li><a onclick="myFunc()" >CONTACT </a></li>
+                </ul>
+            </div>
+            <div class="hat">
+                <img src="3.png">
+                <img src="3.png">
+                <img src="3.png">
+                <img src="3.png">
+                <img src="3.png">
+                <img src="3.png">
+                <img src="3.png">
+            </div>
+
+        </div> 
+        <div class="content1">
+            <h1 class="a1">COLLEGE COUNSELLING <br><span>ADMISSION</span> <br></h1>
+            <p class="par">EXPLORE YOUR FUTURE COLLEGE <br> VISIT YOUR COLLEGE VIRTUALLY...   
+                <br> AND GET ADMISSION</p>
+
+                <button onclick="myFunction()" class="cn">EXPLORE</button>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--- ------------------------------------>
+    <div class="s" id="main2">
+        <h1 class="txt">OKAY..LET ME GUIDE U<br>CLICK THE EXAM YOU APPEARED...</h1> 
+   
+        <button onclick="f1()" class="b1" id="VIT"><b>VIT</b></button>
+        <button onclick="f2()" class="b1" id="JEE"><b>JEE</b></button>
+        <p class="al" id="q">Enter Your jee rank</p>
+        <br>
+        <!-- <span class="al3">Enter your viteee rank</span> -->
+        <p class="al2" id="w"><b>AFTER ENTERING YOUR<br> RANK, CHATVERSE WILL<br> GUIDE U FURTHER . . .<br><br>
+        CLICK ON PLUS ICON !!</b></p>
+        
+
+        <div id="a3">
+            <input type="number" name="" placeholder="Enter Rank">
+        </div>
+        
+
+        
+    </div>
+    <!-- ------------------------------------- -->
+    <div class="final" id="g">
+        <div class="c1">
+        <form action="noaction.php">
+            <div id="aa">LOGIN INTO OUR PAGE!!</div>
+            <div id="aa1" class="form">
+                <input type="text" name="" placeholder="Enter your email-id">
+            </div>
+            <div id="aa2" class="form">
+                <input type="password" name="" placeholder="Enter password">
+            </div>
+            <div id="aa3" class="form">
+                <input type="number" name="" placeholder="Enter Contact No.">
+            </div>
+            
+        
+            <div id="aa6">
+                SUBMIT
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------- -->
+    <div class="footer" id="f">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3" id="bc">
+              <h1>Useful Links</h1>
+              <p>Privacy Policy</p>
+              <p>Terms of Use</p>
+ 
+            </div>
+            
+            <div class="col-md-3" id="ca">
+              <h1>Follow Us On</h1>
+              <a href="https://www.facebook.com">Facebook<br></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">You Tube<br></a>
+              <a href="https://www.twitter.com">Twitter<br></a>
+              <a href="https://www.linkedin.com"></i>LinkedIn<br></a>
+            </div>
+            <div class="col-md-3 footer-image" id="ab">
+              <h1>Download App</h1>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMOPQuwJaIR2o0yBsKzcHYQQTMJ5KvQkKkg&usqp=CAU">
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">© 2022 COLLEGEVERSE.</p>
+        </div>
+        
+    </div>
+    <!--------------------------------------   -->
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span id="spun"></span></p>
+                            <div id="chatbox2"></div>
+                        </div>
+
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()" ></i>
+                                <button class="talk">MIC</button>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <script>
+        function myFunction() {
+           var a=document.getElementById("main2");
+            a.scrollIntoView({behavior:"smooth"});
+            
+        }
+        function myFunc(){
+            var b=document.getElementById("f");
+            b.scrollIntoView({behavior:"smooth"});
+        }
+        function myFunc2(){
+            var c=document.getElementById("g");
+            c.scrollIntoView({behavior:"smooth"})
+        }
+
+
+        
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+</body>
+</html> 
